@@ -1,0 +1,72 @@
+.footer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 25px 50px 0 rgb(0 0 0 / 10%);
+}
+.footer__center {
+  font-size: 24px;
+  transform: translateX(15px);
+}
+.footer__all {
+  padding: 0 5px;
+  margin: 0 5px;
+  font-size: 17px;
+  background: none;
+  border: none;
+}
+.footer__active {
+  padding: 0 5px;
+  margin: 0 5px;
+  font-size: 17px;
+  background: none;
+  border: none;
+}
+.footer__completed {
+  padding: 0 5px;
+  margin: 0 5px;
+  font-size: 17px;
+  background: none;
+  border: none;
+}
+.footer__items {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translate(0%, -50%);
+}
+.footer__center button {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+button.bactive {
+  border-color: rgba(175, 47, 47, 0.2);
+}
+.footer__center button:hover {
+  transition: all 0.3s ease 0s;
+  border-color: rgba(175, 47, 47, 0.2);
+}
+.footer__clear {
+  padding: 0 5px;
+  margin: 0 5px;
+  font-size: 17px;
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: gray;
+  margin-left: 15px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+.footer__clear:hover {
+  text-decoration: underline;
+}

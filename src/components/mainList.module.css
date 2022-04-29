@@ -1,0 +1,66 @@
+.task {
+  max-width: 100%;
+  display: flex;
+  padding: 15px;
+  font-size: 24px;
+  align-items: center;
+}
+ul {
+  margin: 0;
+}
+.task.done > .task__input + label {
+  transition: all 0.5s ease 0s;
+  background: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23bddad5%22%20stroke-width%3D%223%22/%3E%3Cpath%20fill%3D%22%235dc2af%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22/%3E%3C/svg%3E");
+}
+.task__title{
+  transition: all 0.5s ease 0s;
+}
+.task.done .task__title {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+  transition: all 0.4s;
+ }
+.delete {
+  color: red;
+  border: none;
+  background: none;
+  font-size: inherit;
+  opacity: 0;
+  margin-left: auto;
+  transition: all 0.5s ease 0s;
+}
+.task__input {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+/* .task__inputLabel */
+.task__input + label {
+  background: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23ededed%22%20stroke-width%3D%223%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center left;
+  height: 40px;
+  width: 40px;
+  display: block;
+  line-height: 1.2;
+  margin-right: 60px;
+}
+li {
+  width: 100%;
+  list-style: none;
+  border: none;
+  box-shadow: inset 0 -2px 1px rgb(0 0 0 / 3%);
+}
+li:last-child {
+  box-shadow: none;
+}
+.task__liElem:hover .delete {
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+}
+.edit{
+  border: none;
+  padding: 5px;
+  font-size: 24px;
+}

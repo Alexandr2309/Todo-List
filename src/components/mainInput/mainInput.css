@@ -1,0 +1,23 @@
+.all {
+  color: #737373;
+  position: absolute;
+  top: 23%;
+  width: 60px;
+  height: 34px;
+  left: 5px;
+  color: #4d4d4d;
+  transform: rotate(90deg);
+}
+.all::before {
+  content: "❯";
+  font-size: 24px;
+  padding: 10px 27px 10px 27px;
+  z-index: 10;
+}
+.all.select {
+  color: #737373;
+}
+input:focus-visible {
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,1 @@
+export const gKey = () => Date.now() / Math.random();
